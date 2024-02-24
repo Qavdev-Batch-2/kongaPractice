@@ -15,7 +15,12 @@ describe('login Test', () => {
 
 
   it('should login', () => {
- 
+    cy.url().should('include','https://www.konga.com/')
+    cy.get('._0d327_3ftRW a').should('have.length', 8)
+    cy.location('protocol').should('eq', 'https')
+    cy.location('hostname').should('eq', 'www.konga.com')
+    cy.location('pathname').should('eq','/')
+
 
     
   })
