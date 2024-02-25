@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+
 
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
